@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
  import com2 from "../assets/images/com2.webp";
  import com3 from "../assets/images/com3.webp";
  import com4 from "../assets/images/com4.webp";
@@ -8,10 +9,14 @@ import React from "react";
  import com8 from "../assets/images/com8.webp";
  import com9 from "../assets/images/com9.webp";
  import com10 from "../assets/images/com10.webp";
+=======
+
+>>>>>>> 7a3448719ffa5afae5d697da564196b315e765d8
 const ProjectsBox = () => {
   return (
     <section className="section" id="projects">
       <div className="top-header">
+<<<<<<< HEAD
         <h1>สินค้า ตั้งหวังเจ๊ง</h1>
       </div>
       <div className="project-container">
@@ -123,6 +128,26 @@ const ProjectsBox = () => {
         </div>
         
         
+=======
+        <h1>Projects</h1>
+      </div>
+      <div className="project-container">
+        <div className="project-box">
+          <i className="uil uil-briefcase-alt"></i>
+          <h3>Completed</h3>
+          <label>15+ Finished projects</label>
+        </div>
+        <div className="project-box">
+          <i className="uil uil-briefcase-alt"></i>
+          <h3>Clients</h3>
+          <label>15+ Hwppy clients</label>
+        </div>
+        <div className="project-box">
+          <i className="uil uil-briefcase-alt"></i>
+          <h3>Experience</h3>
+          <label>7+ Years in the field</label>
+        </div>
+>>>>>>> 7a3448719ffa5afae5d697da564196b315e765d8
       </div>
     </section>
   );

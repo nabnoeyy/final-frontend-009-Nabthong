@@ -6,17 +6,10 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-src/assets/images/com1.webp
-src/assets/images/com2.webp
-src/assets/images/com3.webp
-src/assets/images/com4.webp
-src/assets/images/com5.webp
-src/assets/images/com6.webp
-src/assets/images/com7.webp
-src/assets/images/com8.webp
-src/assets/images/com9.webp
-src/assets/images/com10.webp
 
+
+=======
+>>>>>>> 7a3448719ffa5afae5d697da564196b315e765d8
 
 node_modules
 dist

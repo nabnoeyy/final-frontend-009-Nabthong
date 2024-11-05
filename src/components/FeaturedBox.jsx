@@ -1,9 +1,14 @@
 import React from "react";
+<<<<<<< HEAD
 import com1 from "../assets/images/com1.webp";
+=======
+import com1 from "../assets/images/com1.avif";
+>>>>>>> 7a3448719ffa5afae5d697da564196b315e765d8
 const FeaturedBox = () => {
   return (
     <section className="featured-box" id="home">
       <div className="featured-text">
+<<<<<<< HEAD
 
         <div className="featured-name">
         ตั้งหวังเจ๊งยินดีต้อนรับ
@@ -35,6 +40,13 @@ const FeaturedBox = () => {
             </a>
           </div>
         </div>
+=======
+        <div className="featured-text-card">
+          <span>Computer</span>
+        </div>
+        <div className="featured-name">ตั้งหวังเจ๋งภูมิใจเสนอ</div>
+        <div className="featured-text-info"></div>
+>>>>>>> 7a3448719ffa5afae5d697da564196b315e765d8
       </div>
       <div className="featured-image">
         <div className="image">

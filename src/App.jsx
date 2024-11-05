@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 
+=======
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+>>>>>>> 7a3448719ffa5afae5d697da564196b315e765d8
 import "./App.css";
 import Header from "./components/Header";
 import ProjectsBox from "./components/ProjectsBox";
@@ -70,7 +76,11 @@ function App() {
     srLeft.reveal(".contact-info", { delay: 200 });
 
     const srRight = ScrollReveal({
+<<<<<<< HEAD
       origin: "right",
+=======
+      origin: "rightbjh",
+>>>>>>> 7a3448719ffa5afae5d697da564196b315e765d8
       distance: "80px",
       duration: 2000,
       reset: true,
@@ -89,6 +99,7 @@ function App() {
       backDelay: 2000,
     });
     return () => {
+<<<<<<< HEAD
       typingEffect.destroy(); // ทำลายการทำงานของ Typed.js
       window.removeEventListener("scroll", scrollActive); // ลบ event listener
     };
@@ -114,6 +125,25 @@ function App() {
     
     
   
+=======
+      typingEffect.destroy();
+    };
+  }, []);
+  return (
+    <>
+      <div className="App">
+        <Header />
+        <main className="wrapper">
+          <FeaturedBox />
+          <AboutBox />
+          <ProjectsBox />
+          <ContactBox />
+        </main>
+        <Footer />
+      </div>
+    </>
+  );
+>>>>>>> 7a3448719ffa5afae5d697da564196b315e765d8
 }
 
 export default App;
