@@ -15,20 +15,15 @@ const ContactBox = () => {
             </h2>
             <p>
               <i className="uil uil-envelope"></i>
-<<<<<<< HEAD
-              Email: nabnoeyy@gmail.com
+            Email: nabnoeyy@gmail.com
             </p>
             <p>
               <i className="uil uil-phone"></i>
               Phone: +66 98 643 8616
-=======
-              Email: natthaan57101@gmail.com
+
+              
             </p>
-            <p>
-              <i className="uil uil-phone"></i>
-              Phone: +66 82 150 5710
->>>>>>> 7a3448719ffa5afae5d697da564196b315e765d8
-            </p>
+           
           </div>
         </div>
         <div className="col">

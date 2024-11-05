@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-
-=======
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
->>>>>>> 7a3448719ffa5afae5d697da564196b315e765d8
+import { useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import ProjectsBox from "./components/ProjectsBox";
@@ -14,7 +8,6 @@ import ContactBox from "./components/ContactBox";
 import Footer from "./components/Footer";
 import Typed from "typed.js";
 import ScrollReveal from "scrollreveal";
-import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
@@ -27,13 +20,11 @@ function App() {
         const sectionHeight = current.offsetHeight,
           sectionTop = current.offsetTop - 50,
           sectionId = current.getAttribute("id");
-        //console.log(sectionHeight, sectionTop, sectionId);
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
           document
             .querySelector(".nav-menu a[href*=" + sectionId + "]")
             .classList.add("active-link");
-          //console.log("inside" + sectionId);
         } else {
           document
             .querySelector(".nav-menu a[href*=" + sectionId + "]")
@@ -41,8 +32,10 @@ function App() {
         }
       });
     }
+
     window.addEventListener("scroll", scrollActive);
 
+    // Initialize ScrollReveal
     const sr = ScrollReveal({
       origin: "top",
       distance: "80px",
@@ -50,21 +43,17 @@ function App() {
       reset: true,
     });
 
-    //feature Box
+    // Reveal animations
     sr.reveal(".featured-text-card", {});
     sr.reveal(".featured-name", { delay: 100 });
     sr.reveal(".featured-text-info", { delay: 200 });
     sr.reveal(".featured-text-btn", { delay: 200 });
     sr.reveal(".social_icons", { delay: 200 });
     sr.reveal(".featured-image", { delay: 200 });
-
-    //ProjectBox
     sr.reveal(".project-box", { interval: 200 });
-
-    //Heading
     sr.reveal(".top-header", {});
 
-    //Left-right Animation
+    // Left-right animations
     const srLeft = ScrollReveal({
       origin: "left",
       distance: "80px",
@@ -74,23 +63,18 @@ function App() {
 
     srLeft.reveal(".about-info", { delay: 200 });
     srLeft.reveal(".contact-info", { delay: 200 });
+    srLeft.reveal(".form-control", { delay: 100 });
 
     const srRight = ScrollReveal({
-<<<<<<< HEAD
       origin: "right",
-=======
-      origin: "rightbjh",
->>>>>>> 7a3448719ffa5afae5d697da564196b315e765d8
       distance: "80px",
       duration: 2000,
       reset: true,
     });
 
     srRight.reveal(".skills-box", { delay: 100 });
-    srLeft.reveal(".form-control", { delay: 100 });
 
-    window.addEventListener("scroll", scrollActive);
-    /**Type Effect */
+    /** Type Effect */
     const typingEffect = new Typed(".typedText", {
       strings: ["Lecturer", "Developer", "Researcher"],
       loop: true,
@@ -98,52 +82,27 @@ function App() {
       backSpeed: 80,
       backDelay: 2000,
     });
+
+    // Cleanup function
     return () => {
-<<<<<<< HEAD
-      typingEffect.destroy(); // ทำลายการทำงานของ Typed.js
-      window.removeEventListener("scroll", scrollActive); // ลบ event listener
-    };
-    
-  }, []);
-  
-    
-    return (
-      <>
-        <div className="App">
-          <Header />
-          <main className="wrapper">
-            <div className="typedText"></div> 
-            <FeaturedBox />
-            <AboutBox />
-            <ProjectsBox />
-            <ContactBox />
-          </main>
-          <Footer />
-        </div>
-      </>
-    );
-    
-    
-  
-=======
       typingEffect.destroy();
+      window.removeEventListener("scroll", scrollActive);
     };
   }, []);
+
   return (
-    <>
-      <div className="App">
-        <Header />
-        <main className="wrapper">
-          <FeaturedBox />
-          <AboutBox />
-          <ProjectsBox />
-          <ContactBox />
-        </main>
-        <Footer />
-      </div>
-    </>
+    <div className="App">
+      <Header />
+      <main className="wrapper">
+        <div className="typedText"></div>
+        <FeaturedBox />
+        <AboutBox />
+        <ProjectsBox />
+        <ContactBox />
+      </main>
+      <Footer />
+    </div>
   );
->>>>>>> 7a3448719ffa5afae5d697da564196b315e765d8
 }
 
 export default App;
